@@ -1,0 +1,53 @@
+name: frontend
+description: ROIA Frontend Flutter project
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.3
+  dartz: ^0.10.1
+  http: ^1.1.0
+  shared_preferences: 2.0.15
+  fluttertoast: ^8.2.2
+  carousel_slider: ^4.2.1
+  connectivity_plus: ^5.0.1
+  injectable: 2.3.2
+  cached_network_image: ^3.2.3
+  smooth_page_indicator: ^1.1.0
+  provider: ^6.1.2
+
+  # add get_it
+  get_it: 7.6.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  injectable_generator: 2.4.1
+  build_runner: 2.4.6
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/icons/
+    - assets/images/emaar.png
+
+  fonts:
+
+    - family: nexa
+      fonts:
+        - asset: assets/fonts/nexa/Nexa-ExtraLight.ttf
+        - asset: assets/fonts/nexa/Nexa-Heavy.ttf
+          weight: 900
+
+    - family: secret_code
+      fonts:
+        - asset: assets/fonts/secret_code/secrcode.ttf
